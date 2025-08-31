@@ -27,7 +27,6 @@
         </configuration>
     </plugin>
 
-    <!-- Maven Assembly Plugin для создания JAR с зависимостями -->
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>

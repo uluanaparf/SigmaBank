@@ -1,2 +1,26 @@
 # SigmaBank
-Program for sorting migrations and determining statistics.
+Консольное Java-приложение для обработки результатов неудачной миграции данных сотрудников в СигмаБанк.
+## Системные требования
+- **Java**: версия 17 (рекомендуется OpenJDK 17)
+- **Maven**: версия 3.6.0 или выше
+- **ОС**: Windows, Linux, macOS
+- 
+### 1. Сборка проекта
+```bash
+mvn clean package
+```
+После успешной сборки в папке target будет создан JAR-файл:
+migration-1.0-SNAPSHOT-jar-with-dependencies.jar
+### 2. Запуск
+```bash
+java -jar target/migration-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
+##  Выходные файлы
+Все результаты сохраняются в папку `output/` (создается автоматически):
+### Зависимости
+Проект использует только стандартные библиотеки Java 17, дополнительные зависимости не требуются.
+### Система сборки
+- **Maven**: версия 3.6.0+
+- **Плагины**:
+    - `maven-compiler-plugin` 3.11.0
+    - `maven-assembly-plugin` 3.5.0
